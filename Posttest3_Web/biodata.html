@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutMe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="biodata.css"> -->
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script>
+      $(document).ready(function() {
+        const darkmodeToggle = document.getElementById('darkmode-toggle')
+        darkmodeToggle.addEventListener('click', function() {
+          const theme = $('html').attr('data-theme');
+          if(theme == 'light') {
+            // * CHANGE TO DARK
+            $('html').css({'filter': 'invert(1)'})
+            $('html').attr('data-theme', 'dark');
+            $('ul').addClass('dark-mode');
+          } else {
+            // * CHANGE TO LIGHT
+            $('html').removeAttr('style');
+            $('html').attr('data-theme', 'light')
+            $('ul').removeClass('dark-mode');
+          }
+        });
+      });
+  </script>
+</body>
+</html>
+<!-- <header class='masthead'>
+    <p class='masthead-intro'>Hi Saya</p>
+    <h1 class='masthead-heading'>Yudith!</h1>
+  </header> -->
+  <div class="fContainer">
+    <nav class="wrapper">
+        <div class="logo">
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="biodata.html" class="akun">Tentang</a></li>
+            <li><img src="foto profil.jpg" alt=""></li>
+            <li><a id="darkmode-toggle"><b>Dark Mode</b></a></li> 
+        </ul>
+    </nav>
+</div>
+  <section class="introduction-section">
+    <div>
+        <img src="foto profil.jpg" alt="">
+    </div>
+      <h1>PERKENALKAN</h1>
+      <p>Saya seorang mahasiswa Universitas Mulawarman dan mengambil jurusan Informatika, saya sekarang menginjak semester 3</p>
+      <p>Saya suka hal-hal berbau komputer, teknologi, dan internet.</p>
+  </section>
+  <section class="location-section">
+      <h1>Darimana aku berasal?</h1>
+      <p>Aku berasal dari Parepare, Sulawesi Selatan</p>
+  </section>
+  <section class="questions-section">
+      <h1 class="h1">SELENGKAPNYA TENTANG SAYA</h1>
+      <h2 href="h2.1" class="h2.1">Apa HobbyKamu?</h2>
+      <p>Hobby saya adalah berenang</p>
+      <h2>Apa Profesi Impian Mu?</h2>
+      <p>Profesi impian saya adalah menjadi seorang pegawai BUMN</p>
+      <h2>Dimana Kamu Tinggal?</h2>
+      <p>Saya sekarang tinggal di Samarinda, Kalimantan Timur. Dan sedang menempuh pendidikan kuliah S1 Informatika</p>
+      <h2>Kenapa kamu memilih Informatika sebagai jurusan kuliah?</h2>
+      <p>Karena saya suka komputer, teknologi, dan internet.</p>
+  </section>
+  
+  <footer>
+    <section class="footer">
+      <div class="social">
+        <a href="https://www.instagram.com/moammer_kayada/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCTlLGQ7fdt_lrUFe987I3zw"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p class="copyright">
+        Future Coders &copy;2023 - by Moammer Kayada Kamal
+      </p>
+    </section>
+
+  </footer>
+  
